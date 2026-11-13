@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaMUT Registration</title>
+    <meta name="description" content="Create an account for Wangari Maathai University of Technology.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page registration-page">
+    <div class="auth-shell auth-shell-small">
+        <div class="auth-hero">
+            <div class="auth-hero-content">
+                <span class="eyebrow">Create account</span>
+                <h1>Welcome to WaMUT.</h1>
+                <p>Build your academic future with a vibrant university community focused on innovation, sustainability, and excellence.</p>
+                <ul>
+                    <li>✔ Secure account creation</li>
+                    <li>✔ Fast student onboarding</li>
+                    <li>✔ Access to student services</li>
+                </ul>
+                <a href="main website.html" class="ghost-btn">Back to Home</a>
+            </div>
+        </div>
+
+        <div class="auth-card">
+            <div class="card-header">
+                <h2>Sign Up</h2>
+                <p>Create your account to continue.</p>
+            </div>
+
+            <form id="registrationForm" action="register.php" method="post" data-server-submit="true" novalidate>
+                <div class="form-grid single-col">
+                    <label class="field">
+                        <span>Full Name</span>
+                        <input type="text" name="fullName" placeholder="Enter your full name" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Registration Number</span>
+                        <input type="text" name="registration_number" placeholder="Enter your registration number" maxlength="50" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Email Address</span>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </label>
+
+                    <label class="field">
+                        <span>Course</span>
+                        <select name="course" required>
+                            <option value="">Choose your course</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Business Management">Business Management</option>
+                            <option value="Engineering">Engineering</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>Create Password</span>
+                        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="8">
+                    </label>
+
+                    <label class="field">
+                        <span>Confirm Password</span>
+                        <input type="password" id="confirmPassword" name="confirm_password" placeholder="Confirm your password" required>
+                    </label>
+                </div>
+
+                <div class="password-checks" aria-live="polite">
+                    <p id="passwordStrength">Password must be at least 8 characters.</p>
+                    <ul>
+                        <li id="lengthCheck">At least 8 characters</li>
+                        <li id="caseCheck">Uppercase and lowercase letters</li>
+                        <li id="numberCheck">At least one number</li>
+                    </ul>
+                </div>
+
+                <div class="checkbox-row">
+                    <label>
+                        <input type="checkbox" id="showPassword">
+                        Show password
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">Create Account</button>
+                    <a href="login.html" class="secondary-link">Already have an account?</a>
+                </div>
+
+                <div id="formMessage" class="success-banner" aria-live="polite"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to the WaMUT student portal.">
+    <title>Student Sign In | WaMUT</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page registration-page">
+    <div class="auth-shell auth-shell-small">
+        <section class="auth-hero">
+            <div class="auth-hero-content">
+                <span class="eyebrow">Student portal</span>
+                <h1>Welcome back to WaMUT.</h1>
+                <p>Sign in with your student registration number and password to access your account.</p>
+                <ul>
+                    <li>Secure password verification</li>
+                    <li>Student account access</li>
+                    <li>Support from the university team</li>
+                </ul>
+                <a href="main website.html" class="ghost-btn">Back to Home</a>
+            </div>
+        </section>
+
+        <section class="auth-card">
+            <div class="card-header">
+                <h2>Student Sign In</h2>
+                <p>Enter your account credentials below.</p>
+            </div>
+
+            <form id="studentLoginForm" action="authenticate.php" method="post">
+                <div class="form-grid single-col">
+                    <label class="field" for="registrationNumber">
+                        <span>Registration Number</span>
+                        <input id="registrationNumber" name="registration_number" type="text" autocomplete="username" placeholder="Enter your registration number" maxlength="50" required>
+                    </label>
+                    <label class="field" for="password">
+                        <span>Password</span>
+                        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">Sign In</button>
+                    <a href="registration.html" class="secondary-link">Create a student account</a>
+                </div>
+                <div id="formMessage" class="success-banner" aria-live="polite"></div>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmes Offered | WaMUT</title>
+    <meta name="description" content="Explore the programmes offered at Wangari Maathai University of Technology.">
+    <link rel="stylesheet" href="programs.css">
+</head>
+
+<body class="programs-page">
+    <div class="container">
+        <header class="page-header">
+            <span class="eyebrow">Academics</span>
+            <h1>Programmes Offered</h1>
+            <p>Choose a path that matches your ambition and prepares you for a meaningful career in technology, business, and engineering.</p>
+        </header>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="technology">Technology</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="engineering">Engineering</button>
+        </div>
+
+        <main class="courses-grid">
+            <article class="course-card" data-category="technology">
+                <div class="card-top cs">
+                    <div class="card-icon">💻</div>
+                    <h2>Computer Science</h2>
+                </div>
+                <div class="card-body">
+                    <p>Learn programming, software development, data systems, and cybersecurity through real-world practice.</p>
+                    <div class="course-details">
+                        <span class="course-tag">4 Years</span>
+                        <span>Technology</span>
+                    </div>
+                    <button class="learn-btn" type="button">Learn More</button>
+                </div>
+            </article>
+
+            <article class="course-card" data-category="business">
+                <div class="card-top biz">
+                    <div class="card-icon">📊</div>
+                    <h2>Business Management</h2>
+                </div>
+                <div class="card-body">
+                    <p>Study marketing, finance, entrepreneurship, and leadership for a growing global business environment.</p>
+                    <div class="course-details">
+                        <span class="course-tag">3 Years</span>
+                        <span>Business</span>
+                    </div>
+                    <button class="learn-btn" type="button">Learn More</button>
+                </div>
+            </article>
+
+            <article class="course-card" data-category="engineering">
+                <div class="card-top eng">
+                    <div class="card-icon">🏗️</div>
+                    <h2>Engineering</h2>
+                </div>
+                <div class="card-body">
+                    <p>Build strong foundations in electrical, mechanical, and civil engineering with a practical, problem-solving approach.</p>
+                    <div class="course-details">
+                        <span class="course-tag">4 Years</span>
+                        <span>Engineering</span>
+                    </div>
+                    <button class="learn-btn" type="button">Learn More</button>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script src="programs.js"></script>
+</body>
+
+</html>

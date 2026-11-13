@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaMUT Student Application</title>
+    <meta name="description" content="Apply to Wangari Maathai University of Technology.">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+    <div class="auth-shell">
+        <div class="auth-hero">
+            <div class="auth-hero-content">
+                <span class="eyebrow">Admission Portal</span>
+                <h1>Start your future at WaMUT.</h1>
+                <p>Join a learning community built on innovation, sustainability, and purpose. Complete your application and take the next step toward your academic journey.</p>
+                <ul>
+                    <li>Flexible online application</li>
+                    <li>Supportive student advisors</li>
+                    <li>Modern learning environment</li>
+                </ul>
+                <a href="main website.html" class="ghost-btn">Back to Home</a>
+            </div>
+        </div>
+
+        <div class="auth-card">
+            <div class="card-header">
+                <h2>Student Application Form</h2>
+                <p>Complete the details below to begin your application.</p>
+            </div>
+
+            <form id="studentApplicationForm" novalidate>
+                <div class="form-grid">
+                    <label class="field">
+                        <span>Full Name</span>
+                        <input type="text" name="fullName" placeholder="Enter full name" required>
+                    </label>
+                    <label class="field">
+                        <span>Email Address</span>
+                        <input type="email" name="email" placeholder="Enter email" required>
+                    </label>
+                    <label class="field">
+                        <span>Phone Number</span>
+                        <input type="tel" name="phone" placeholder="Enter phone number" required>
+                    </label>
+                    <label class="field">
+                        <span>Date of Birth</span>
+                        <input type="date" name="dob" required>
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <span>Gender</span>
+                    <div class="choice-row">
+                        <label><input type="radio" name="gender" value="male" checked> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <label class="field">
+                    <span>Physical Address</span>
+                    <textarea name="address" rows="4" placeholder="Enter your address" required></textarea>
+                </label>
+
+                <div class="form-grid">
+                    <label class="field">
+                        <span>City</span>
+                        <input type="text" name="city" placeholder="City" required>
+                    </label>
+                    <label class="field">
+                        <span>Select Program</span>
+                        <select name="program" required>
+                            <option value="">Choose a programme</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="business_management">Business Management</option>
+                            <option value="engineering">Engineering</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="upload-group">
+                    <h3>Required Documents</h3>
+                    <label class="upload-box">
+                        <span>Passport Photo</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                    <label class="upload-box">
+                        <span>Birth Certificate</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                    <label class="upload-box">
+                        <span>National ID</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                    <label class="upload-box">
+                        <span>KCPE Certificate</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                    <label class="upload-box">
+                        <span>KCSE Certificate</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                    <label class="upload-box">
+                        <span>Academic Transcript</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                    <label class="upload-box">
+                        <span>Recommendation Letter</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                </div>
+
+                <div class="form-grid">
+                    <label class="field">
+                        <span>Payment Method</span>
+                        <select name="payment" required>
+                            <option value="">Choose payment method</option>
+                            <option value="credit_card">Credit Card</option>
+                            <option value="debit_card">Debit Card</option>
+                            <option value="bank_transfer">Bank Transfer</option>
+                            <option value="mobile_payment">Mobile Payment</option>
+                        </select>
+                    </label>
+                    <label class="upload-box payment-proof">
+                        <span>Payment Proof</span>
+                        <input class="file-input" type="file" accept="image/*" required>
+                        <small class="file-name">No file selected</small>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">Submit Application</button>
+                    <a href="requrements.html" class="secondary-link">Download requirements</a>
+                </div>
+                <div id="formMessage" class="success-banner" aria-live="polite"></div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

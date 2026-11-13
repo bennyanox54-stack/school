@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Review admission requirements and prepare your application to WaMUT.">
+	<title>Admission Requirements | WaMUT</title>
+	<link rel="stylesheet" href="requirements.css">
+</head>
+
+<body>
+	<main class="requirements-page">
+		<div class="page-shell">
+			<section class="hero" aria-labelledby="pageTitle">
+				<div class="hero-copy">
+					<span class="eyebrow">Admissions · Applicant checklist</span>
+					<h1 id="pageTitle">Get ready to apply.</h1>
+					<p>Use this checklist to prepare your admission documents. Keep digital copies ready before you begin your application.</p>
+					<div class="cta-row">
+						<a class="btn primary-btn" href="registration.html">Start application</a>
+						<button class="btn secondary-btn" id="printButton" type="button">Print checklist</button>
+					</div>
+				</div>
+
+				<aside class="summary-card" aria-label="Checklist progress">
+					<span class="mini-label">Your preparation</span>
+					<div class="progress-box">
+						<div class="progress-ring" role="img" aria-label="0 percent complete">
+							<span class="progress-value" id="progressValue">0%</span>
+						</div>
+						<h2>Application checklist</h2>
+						<p>Mark each item as you prepare it.</p>
+						<div class="progress-status">
+							<span id="progressText" aria-live="polite">0 of 5 documents ready</span>
+						</div>
+						<div class="progress-bar" role="progressbar" aria-label="Checklist completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+							<span id="progressBar"></span>
+						</div>
+					</div>
+				</aside>
+			</section>
+
+			<section class="content-grid" aria-label="Admission preparation">
+				<div class="requirements-panel">
+					<h2 class="section-title">Before you apply</h2>
+					<ul class="checklist">
+						<li class="check-item">
+							<label class="check-row">
+								<input class="requirement-checkbox" type="checkbox">
+								<span>National ID or passport copy</span>
+							</label>
+							<span class="check-pill">Identity</span>
+						</li>
+						<li class="check-item">
+							<label class="check-row">
+								<input class="requirement-checkbox" type="checkbox">
+								<span>Academic certificates and transcripts</span>
+							</label>
+							<span class="check-pill">Academic</span>
+						</li>
+						<li class="check-item">
+							<label class="check-row">
+								<input class="requirement-checkbox" type="checkbox">
+								<span>Recent passport-size photograph</span>
+							</label>
+							<span class="check-pill">Photo</span>
+						</li>
+						<li class="check-item">
+							<label class="check-row">
+								<input class="requirement-checkbox" type="checkbox">
+								<span>Completed medical examination form</span>
+							</label>
+							<span class="check-pill">Medical</span>
+						</li>
+						<li class="check-item">
+							<label class="check-row">
+								<input class="requirement-checkbox" type="checkbox">
+								<span>Application fee payment evidence</span>
+							</label>
+							<span class="check-pill">Payment</span>
+						</li>
+					</ul>
+					<div class="notice" id="completionNotice" role="status" aria-live="polite">
+						Your checklist is complete. You are ready to start your application.
+					</div>
+				</div>
+
+				<aside class="downloads-panel">
+					<h2>Forms and documents</h2>
+					<div class="download-list">
+						<a class="download-card" href="documents/requrements.pdf" target="_blank" rel="noopener">
+							<span><span class="doc-name">Admission requirements</span><br><span class="doc-type">PDF document</span></span>
+							<span class="download-icon" aria-hidden="true">↓</span>
+						</a>
+						<a class="download-card" href="documents/medical.pdf" target="_blank" rel="noopener">
+							<span><span class="doc-name">Medical examination form</span><br><span class="doc-type">PDF document</span></span>
+							<span class="download-icon" aria-hidden="true">↓</span>
+						</a>
+						<a class="download-card" href="documents/admission_material.pdf" target="_blank" rel="noopener">
+							<span><span class="doc-name">Admission materials</span><br><span class="doc-type">PDF document</span></span>
+							<span class="download-icon" aria-hidden="true">↓</span>
+						</a>
+					</div>
+					<p class="document-note">Check the admission materials for programme-specific details before submitting your application.</p>
+				</aside>
+			</section>
+		</div>
+	</main>
+	<script src="requirements.js" defer></script>
+</body>
+
+</html>

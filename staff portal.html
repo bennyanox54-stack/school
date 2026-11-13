@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Staff sign-in for Wangari Maathai University of Technology.">
+    <meta name="theme-color" content="#174a3b">
+    <title>Staff Portal | WaMUT</title>
+    <link rel="icon" type="image/png" href="images/logo .png">
+    <link rel="stylesheet" href="staff-portal.css">
+</head>
+
+<body class="staff-page">
+    <main class="staff-layout">
+        <section class="staff-welcome" aria-labelledby="welcomeTitle">
+            <a class="brand" href="main website.html" aria-label="WaMUT home">
+                <img src="images/logo .png" alt="">
+                <span>WaMUT <small>Wangari Maathai University of Technology</small></span>
+            </a>
+
+            <div class="welcome-copy">
+                <p class="eyebrow">Staff access</p>
+                <h1 id="welcomeTitle">Supporting the people who move us forward.</h1>
+                <p>Access staff services and university resources through the WaMUT staff portal.</p>
+            </div>
+
+            <div class="welcome-footer">
+                <span>Wangari Maathai University of Technology</span>
+                <a href="main website.html">Visit the public website <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="staff-access" aria-labelledby="signInTitle">
+            <div class="access-content">
+                <a class="mobile-brand" href="main website.html">WaMUT <span>Staff Portal</span></a>
+                <p class="eyebrow">Welcome back</p>
+                <h2 id="signInTitle">Sign in to your account</h2>
+                <p class="intro">Use your university staff credentials to continue.</p>
+
+                <form id="staffLoginForm" novalidate>
+                    <label class="field" for="email">
+                        <span>Staff email</span>
+                        <input id="email" name="email" type="email" autocomplete="username" placeholder="name@wamut.ac.ke" required>
+                    </label>
+
+                    <label class="field" for="password">
+                        <span>Password</span>
+                        <span class="password-field">
+                            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                            <button class="password-toggle" id="passwordToggle" type="button" aria-controls="password" aria-pressed="false">Show</button>
+                        </span>
+                    </label>
+
+                    <div class="form-options">
+                        <label class="remember-option"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+                    </div>
+
+                    <button class="submit-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+                    <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+                </form>
+
+                <p class="access-note">Need help accessing your account? Contact your university administrator.</p>
+                <a class="student-link" href="application.html">Go to the student application <span aria-hidden="true">→</span></a>
+            </div>
+            <footer class="access-footer">© WaMUT · Staff portal</footer>
+        </section>
+    </main>
+    <script src="staff-portal.js" defer></script>
+</body>
+
+</html>
